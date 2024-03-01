@@ -62,4 +62,37 @@ public class AnagramStrings {
         }
         return true;
     }
+
+
+
+
+    /*  COUNTING ANAGRAMS IN A GIVEN STRING */
+    /* LOGIC  */
+    
+    HashMap<Character,Integer> map = new HashMap<>();
+        for(int i=0;i<pat.length();i++){
+            map.put(pat.charAt(i),map.getOrDefault(pat.charAt(i),0)+1);
+        }
+        int count = map.size();
+        int left = 0;
+        int right = 0;
+        int ans = 0;
+        while(right<txt.length()){
+            char c1 = txt.charAt(right);
+            if(map.containsKey(c1)){
+                map.put(c1,map.get(c1)-1);
+                if(map.get(c1)==0) count--;
+            }
+            if(right-left+1==pat.length()){
+                if(count==0) ans++;
+                char c2 = txt.charAt(left);
+                if(map.containsKey(c2)){
+                    map.put(c2,map.get(c2)+1);
+                    if(map.get(c2)==1) count++;
+                }
+                left++;
+            }
+            right++;
+        }
+        return ans;
 }
