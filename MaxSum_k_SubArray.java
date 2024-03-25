@@ -3,7 +3,7 @@
 /*   https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1  */
 
 
-/*   Using SLIDING EINDOW PROTOCOL    */
+/*   Using SLIDING WINDOW PROTOCOL    */
 
 
 public class MaxSum_k_SubArray
