@@ -24,6 +24,6 @@ public class ReverseNumber {
             System.out.print(n%10);
         }
         // Fun(n);
-    sc.close();
+        sc.close();
     }
 }
