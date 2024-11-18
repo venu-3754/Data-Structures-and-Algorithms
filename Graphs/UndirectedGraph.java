@@ -4,7 +4,7 @@ public class UndirectedGraph {
 
     public boolean dfs(ArrayList<ArrayList<Integer>> graph, boolean[] visited,int i, int parent)
     {
-        // int temp=0;
+        int temp=0;
         visited[temp] = true;
         for(int j=0;i<graph.get(temp).size();j++)
         {
