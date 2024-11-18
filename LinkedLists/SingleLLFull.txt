@@ -9,6 +9,7 @@ public class LinkedList {
         }
     }
     public static Node head;
+
     public static void printLL(){
         Node temp = head;
         while(temp != null){
@@ -27,7 +28,7 @@ public class LinkedList {
         }
         System.out.println(count);
     }
-    
+
     public static void addFirst(int data){
         Node newNode = new Node(data);
         newNode.next = head;

@@ -1,3 +1,4 @@
+package Algorithms;
 
 
 /*Kadane's Algo is used to find MAXIMUM SUB-ARRAY SUM in given array*/
@@ -27,7 +28,7 @@ public class KadanesAlgo {
 }
 
 
-    /*  LEETCODE SOLUTION  */
+    /*  LEETCODE SOLUTION ----> This will some test cases */
 
 // class Solution {
 //     public int maxSubArray(int[] nums) {
@@ -44,3 +45,25 @@ public class KadanesAlgo {
 //         return max;
 //     }
 // }
+
+
+/*Leet code Optimized Solution */
+
+// public int maxSubArray(int[] nums) {
+//     if(nums.length<1) return -1;
+//     int max = nums[0];
+//     int cursum = nums[0];
+//     for(int i=1;i<nums.length;i++)
+//     {
+//         cursum = Math.max(nums[i],cursum+nums[i]);
+//         max = Math.max(cursum,max);
+//     }
+//     return max;
+// }
+
+
+
+
+
+
+

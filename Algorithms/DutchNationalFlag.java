@@ -1,3 +1,4 @@
+package Algorithms;
 // import java.util.Scanner;
 
 public class DutchNationalFlag {
@@ -54,5 +55,6 @@ public class DutchNationalFlag {
         Algo(a);
         System.out.println("After Sorting 0's and 1's");
         PrintArray(a);
+        // sc.close();
     }
 }

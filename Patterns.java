@@ -1,6 +1,6 @@
 /*        1)Number of rows and columns
           2)Basic boiler plate code
-          for(int i=1;i<= ;i++){
+            for(int i=1;i<= ;i++){
              for(int j=1;j<= ;j++){
                  System.out.println("*");
                 }   

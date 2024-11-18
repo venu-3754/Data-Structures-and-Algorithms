@@ -13,7 +13,7 @@ public class HashMapFunc {
             map.put(a[i],map.getOrDefault(a[i],0)+1);
         }
         for(int i: map.keySet()){
-            System.out.println(i+" "+map.get(i));
+            System.out.println("Key : "+i+"    &    "+"Value : "+map.get(i));
         }
     }
 

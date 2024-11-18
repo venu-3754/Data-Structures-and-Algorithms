@@ -1,3 +1,4 @@
+package Strings;
 
 /* To find whether given two strings are Anagram Or Not? */
 /*  https://www.geeksforgeeks.org/problems/anagram-1587115620/1   */
@@ -69,7 +70,9 @@ public class AnagramStrings {
     /*  COUNTING ANAGRAMS IN A GIVEN STRING */
     /* LOGIC  */
     
-    HashMap<Character,Integer> map = new HashMap<>();
+    public static int CountOccurancesOfAnagrams(String pat, String txt)
+    {
+        HashMap<Character,Integer> map = new HashMap<>();
         for(int i=0;i<pat.length();i++){
             map.put(pat.charAt(i),map.getOrDefault(pat.charAt(i),0)+1);
         }
@@ -95,4 +98,5 @@ public class AnagramStrings {
             right++;
         }
         return ans;
+    }
 }
